@@ -321,7 +321,7 @@ const FormBuilder = function(opts, element) {
       field.name = utils.nameAttr(field)
     }
 
-    if (isNew && utils.inArray(field.type, ['text', 'number', 'file', 'date', 'select', 'textarea', 'autocomplete'])) {
+    if (isNew && utils.inArray(field.type, ['text', 'number', 'file', 'date', 'select', 'textarea', 'autocomplete','roombooking'])) {
       field.className = field.className || 'form-control'
     }
 
@@ -384,6 +384,10 @@ const FormBuilder = function(opts, element) {
         optionData.selected = false
       }
 
+       /* if (type !== 'roombooking') {
+            optionData.selected = false
+        }*/
+
       return optionData
     }
 
@@ -425,6 +429,7 @@ const FormBuilder = function(opts, element) {
 
     const typeAttrsMap = {
       autocomplete: defaultAttrs.concat(['options']),
+      // roombooking: defaultAttrs.concat(['date1','date2']),
       button: ['label', 'subtype', 'style', 'className', 'name', 'value', 'access'],
       checkbox: [
         'required',

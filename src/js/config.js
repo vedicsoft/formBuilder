@@ -4,6 +4,7 @@ export const defaultOptions = {
   actionButtons: [],
   controlOrder: [
     'autocomplete',
+    'roombooking',
     'button',
     'checkbox',
     'checkbox-group',
@@ -87,6 +88,7 @@ export const defaultI18n = {
       allFieldsRemoved: 'All fields were removed.',
       allowMultipleFiles: 'Allow users to upload multiple files',
       autocomplete: 'Autocomplete',
+      roombooking: 'RoomBooking',
       button: 'Button',
       cannotBeEmpty: 'This field cannot be empty',
       checkboxGroup: 'Checkbox Group',

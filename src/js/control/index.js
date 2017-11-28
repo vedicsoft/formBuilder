@@ -1,4 +1,5 @@
 import controlAutocomplete from './autocomplete';
+import controlRoomBooking from './roombooking';
 import controlButton from './button';
 import controlCustom from './custom';
 import controlHidden from './hidden';
@@ -12,6 +13,7 @@ import controlQuill from './textarea.quill';
 
 export default {
   controlAutocomplete,
+  controlRoomBooking,
   controlButton,
   controlCustom,
   controlHidden,
